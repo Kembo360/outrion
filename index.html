@@ -16,8 +16,8 @@
 
   <style>
     :root {
-      --bg:          #FFFFFF;
-      --bg-2:        #F0F5FF;
+      --bg:          #F8FAFF;
+      --bg-2:        #EDF2FF;
       --bg-card:     #FFFFFF;
       --bg-card-h:   #F5F8FF;
       --border:      rgba(13,33,68,0.10);
@@ -57,7 +57,11 @@
     html { scroll-behavior: smooth; }
     body {
       font-family: 'Inter', system-ui, -apple-system, sans-serif;
-      background: var(--bg); color: var(--text);
+      background-color: #F8FAFF;
+      background-image:
+        radial-gradient(rgba(13,33,68,0.055) 1px, transparent 1px);
+      background-size: 28px 28px;
+      color: var(--text);
       line-height: 1.6; -webkit-font-smoothing: antialiased;
     }
 
@@ -158,7 +162,7 @@
     .trust-item svg { color: var(--cyan); flex-shrink: 0; }
 
     /* CRED BAR */
-    .cred-bar { background: var(--bg-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 28px 24px; }
+    .cred-bar { background: #fff; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 28px 24px; }
     .cred-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; }
     .cred-item { display: flex; align-items: center; gap: 10px; padding: 10px 32px; border-right: 1px solid var(--border); }
     .cred-item:last-child { border-right: none; }
